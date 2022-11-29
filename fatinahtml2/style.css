@@ -1,0 +1,100 @@
+
+ <style>
+            html,
+            body {
+                width: auto;
+                height: auto;
+            }
+
+            * {
+               font-family:monospace;
+
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+
+            h1 {
+                text-align: center;
+                padding-top: 4%;
+                padding-bottom: 2%;
+            }
+            .p1 {
+                text-align: center;
+               
+                padding-bottom: 2%;
+            }
+          
+
+            .container {
+                width: 100%;
+                min-height: 100vh;
+                display: inline-block;
+                padding: 6%;
+            }
+
+            nav {
+                background-color: rgb(23, 24, 49);
+
+            }
+
+
+
+            .bar {
+                list-style-type: none;
+                align-items: center;
+                overflow: hidden;
+                color: white;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                padding: 8px;
+                text-decoration: none;
+                color: white;
+
+            }
+
+            .image {
+                height: 550px;
+                width: 750px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .image1 {
+                height: 150px;
+                width: 250px;
+            }
+
+            .routine {
+                display: block;
+            }
+
+            .codi {
+                text-decoration: none;
+                color: rgb(223, 26, 164);
+
+            }
+
+            .codi:hover {
+                color: yellow;
+
+
+            }
+
+            footer {
+                background-color: rgb(23, 24, 49);
+                width: auto;
+                height: 11px;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.3em;
+            }
+        </style>
