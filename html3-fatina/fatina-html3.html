@@ -1,0 +1,228 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="x-UA-compatible" content="IE=Edg">
+    <meta name="viewport" , content="width=device-width" intial-scale="1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/slice-html@latest"></script>
+
+    <script>
+        const readMorePrefaceMaxLength = 100;
+const readMoreTexts = document.querySelectorAll(".read-more-text");
+readMoreTexts.forEach((readMoreText) => {
+  const extra = SliceHTML.sliceHTML(
+    readMoreText,
+    readMorePrefaceMaxLength
+  );
+  if (extra.textContent.length === 0) {
+    return;
+  }
+  const preface = SliceHTML.sliceHTML(
+    readMoreText,
+    0,
+    readMorePrefaceMaxLength
+  );
+  readMoreText.innerHTML = "";
+  readMoreText.append(preface);
+  const extraSpan = document.createElement("span");
+  extraSpan.hidden = true;
+  extraSpan.append(extra);
+  const button = document.createElement("button");
+  button.classList.add("read-more-button");
+  button.textContent = "... read more";
+  button.addEventListener("click", () => {
+    button.hidden = true;
+    extraSpan.hidden = false;
+  });
+  readMoreText.append(button);
+  readMoreText.append(extraSpan);
+});
+    </script>
+    <div class="imga">
+        <h1>hello world<h1>
+            <h4>how are you today?</h4>
+    </div>
+
+
+    <header>
+
+
+        <div class="div2>">
+            <nav class="bar">
+                <a href="#Home">Home</a>
+                <a href="#lecon">lecon </a>
+                <a href="#subjects">subjects</a>
+                <a href="#news">News</a>
+                <a href="#gallery">gallery</a>
+                <a href="#about us">about us</a>
+            </nav>
+
+
+    </header>
+    <div class="container">
+        <aside>
+            <div class="menu">
+                <h2>Main Menu</h2>
+                <ul class="routine">
+                    <li><a href="#Home">Menu</a></li><vr>
+                    <li><a href="#Home">Menu</a></li>
+                    <li><a href="#Home">Menu</a></li>
+                    <li><a href="#Home">Menu</a></li>
+                    <li><a href="#Home">Menu</a></li>
+                    <li><a href="#Home">Menu</a></li>
+                </ul>
+            </div><br>
+            <hr>
+            <div class="side1">
+
+                <h2>
+                    side1
+                </h2>
+                <p>
+                    you
+                    might chat or send a message via Slack or IRC <q>a form of chat popular among software devs</q>.<br>
+                    If members of your team are free, you might go to a whiteboard together or sit together and then
+                    diagram
+                    and
+                    work out a solution. <q>Then you might possibly go back to struggling!</q>
+                    Depending on the company, after you find a solution, you’d usually create a “change request” or
+                    “pull
+                    request”<br> summarising changes proposed, which someone else would review.
+                    <br> They might have ideas or solutions of their own.
+
+                    This would probably bring you to lunch. Often, the afternoon is when meetings are held, and
+                    longer-term
+                    projects are discussed.
+                </p>
+            </div>
+        </aside>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">
+                <div class="box">
+                    <div class="para1">
+                        <h1><b><u>Daily Routine of a Software Developer</u></b></h1>
+                        <hr><br>
+                        So your day might break down like this:<br>
+
+                        9 am: Come in, check emails, arrange short, medium and long-term to-do lists, organise
+                        meetings<br>
+
+                        10 am: Standup meeting, coordinate day and organise collaboration <q>if any</q><br>
+
+                        Then it’s into project work: Carry out coding, problem-solving and development.
+                        <br>At various points, you will ask for advice <q>or give advice</q>.
+                        <br> Depending on the environment,
+                        you
+                        might chat or send a message via Slack or IRC <q>a form of chat popular among software
+                            devs</q>.<br>
+                        If members of your team are free, you might go to a whiteboard together or sit together and
+                        then diagram
+                        and
+                        work out a solution. <q>Then you might possibly go back to struggling!</q>
+                        Depending on the company, after you find a solution, you’d usually create a “change request”
+                        or “pull
+                        request”<br> summarising changes proposed, which someone else would review.
+                        <br> They might have ideas or solutions of their own.
+
+                        This would probably bring you to lunch. Often, the afternoon is when meetings are held, and
+                        longer-term
+                        projects are discussed.
+                    </div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+
+                <section class="section1">
+
+                    <div class="block2">
+                        
+                        <h2>
+                            block1
+                        </h2><hr>
+                        
+    <p class="read-more-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean <b>massa</b>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+    <!-- prettier-ignore -->
+    <p class="read-more-text">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies <i>nisi</i> vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, </p>
+    <!-- prettier-ignore -->
+    <button class=".read-more-text" ><a class="bt1" href="https://codi.tech/">read more</a></button>
+   
+                        
+                        
+                    </div>
+            </td>
+            <td>
+                <div class="block1">
+                    <h2>block3</h2>
+                    <hr>
+    <p class="read-more-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean <b>massa</b>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+    <!-- prettier-ignore --><button class=".read-more-text" ><a a class="bt1" href="https://codi.tech/">read more</a></button>
+   
+   
+                    
+                       
+                        
+                </div>
+
+                </section>
+            </td>
+
+            </div>
+            </div>
+        </tr>
+        <tr>
+            <td>
+                <div class="form">
+                    <form action="/action_page.php">
+                        <label for="fname">First  name :&nbsp;</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">email adress: </label>&nbsp;
+                        <input type="email" id="email" name="lname"><br>
+                        <br>
+                        <textarea rows="4" cols="50" name="comment" form="usrform">
+            Enter text here...</textarea><br>
+            <input class="btt1" type="submit" value="Send">
+            </td>
+            <td><br><hr>
+                <p>Choose your favorite Web language:</p>
+                <form>
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">HTML</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">CSS</label><br>
+                      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                      <label for="javascript">JavaScript</label><br><br>
+                    <input class="btt1" type="submit" value="Submit">
+                </form>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</body>
+</div>
+<hr>
+<footer>
+    thank you for visit our page
+    <a class="codi" href="https://codi.tech/">Codi Tech.</a>
+    
+    <div class="social-icons">
+        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+    </div>
+</footer>
+<hr>
+</tr>
+</table>
+
+</body>
+
+</html>
